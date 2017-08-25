@@ -1,0 +1,88 @@
+<div id='contest'>
+  <div class='image_outer'>
+    <div class='container-fluid u-pad-top'>
+      <div class='row'>
+        <div class='container'>
+          <div class='col-md-6 col-sm-9 col-lg-6 header'>
+            <h1 class="headline" id="surligne">Live the <span class="heavy" id="surligne">dream<br><span class='text-left'>life</span></span></h1>
+          </div>
+          <div class='col-md-6 col-sm-3 col-lg-6 text'>
+            <p id="surligne"> <span id="accentuer">Traveling</span> around the world and getting paid for it, doesn't sound bad right ? That's what we call the dream life here at Voyajers, and we give you the opportunity to live it !
+            
+
+            </p>
+            </p>
+            </p>
+            </p>
+
+
+            <div class="go-to-contest">
+              <a class="p-button p-button-secondary" id="btn-concours" href="#explication">Learn more about the job</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+ 
+
+<div id='explication'>
+  <div id='suite'>
+    <div class='container-fluid u-pad-top'>
+      <div class='row'>
+        <div class='container'>
+          <div class='col-md-6 col-sm-9 col-lg-6 header'>
+            <h2 class="text-center"></h2>
+          
+<div class='col-md-6 col-sm-3 col-lg-6 text'>
+ <div class="go-to-contest">
+              <a class="p-button p-button-secondary" id="btn-concours-suite" href="#form">Apply for Dream Life</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+
+
+  <a class='form' id='form'></a>
+  <section id='contest-form-container'>
+    <div class='row'>
+      <div class='contest-form'>
+        <%= render 'contest_participant_form', new_participant: @new_participant %>
+      </div>
+    </div>
+  </section>
+  <!-- Modal -->
+  <div id="successfull-delivery" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-body">
+          <h3>You took the first step towards the Dream Life!<br> You will hear from us soon for the second part of the selection.<br>To make sure you don’t miss any news, make sure to follow our social networks</h3>
+          <div class="footer-social-icons">
+            <ul class="social-icons">
+                <li><a href="https://www.facebook.com/Voyajers/" class="social-icon" target="_blank"> <i class="fa fa-facebook"></i></a></li>
+                <li><a href="https://twitter.com/Voyajers" class="social-icon" target="_blank"> <i class="fa fa-twitter"></i></a></li>
+                <li><a href="https://www.instagram.com/voyajers/" class="social-icon" target="_blank"> <i class="fa fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <%= link_to 'Close', tours_path, class: "btn btn-default close-modal" %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
