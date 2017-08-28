@@ -12,3 +12,26 @@
       </div>
     </div>
 </footer>
+
+<script type="text/javascript">
+  $("#btn-concours").click(function() {
+   $('html,body').animate({
+     scrollTop: $("#suite").offset().top - 70
+    },
+    'slow');
+  });
+
+  $("#btn-concours-suite").click(function() {
+   $('html,body').animate({
+     scrollTop: $("#text-model").offset().top + 15
+    },
+    'slow');
+  });
+
+  $("#btn-concours-form").click(function() {
+   $('html,body').animate({
+     scrollTop: $("#form").offset().top + 5
+    },
+    'slow');
+  });
+</script>
