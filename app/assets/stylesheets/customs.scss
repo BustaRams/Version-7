@@ -102,6 +102,9 @@
     letter-spacing: 2px;
     margin-bottom: 16px;
     color: white;
+    @media(min-width: 320px) and (max-width: 568px) {
+      font-size: 40px;
+    }
   }
 
  .headline .heavy {
@@ -117,6 +120,14 @@
     font-size: 18px;
     padding: 0 0 1em;
     line-height: 1.3;
+    @media(max-width: 1022px) {
+      margin-top: 0;
+    }
+    #surligne {
+      @media(min-width: 992px) and (max-width: 1225px) {
+        padding-left: 3%;
+      }
+    }
   }
 
   .text1{
@@ -130,6 +141,9 @@
 
   .text-left{
     margin-left: 320px;
+    @media(min-width: 320px) and (max-width: 568px) {
+      margin-left: 76%;
+    }
   }
 
   .go-to-contest{
@@ -152,7 +166,7 @@
     display: block;
     margin-top: -50px;
     position: absolute;
-}
+  }
 
   .transparent-input {
     background-color:transparent !important;
@@ -234,6 +248,12 @@ ul.social-icons {
 
 #surligne {
   text-shadow : 2px 2px 4px #000000;
+}
+
+@media (min-width: 992px) and (max-width: 1225px) {
+  .go-to-contest {
+    padding-left: 14%;
+  }
 }
 
 #btn-concours {
@@ -356,7 +376,7 @@ ul.social-icons {
     }
   }
   .mcrewp {
-    @media(min-width: 1024px) {
+    @media(min-width: 1226px) {
       padding-left: 70px;
       padding-right: 70px;      
     }
@@ -375,7 +395,7 @@ ul.social-icons {
       padding-bottom: 30px;
       color: #2dace2;
       font-size: 30px;
-      font-weight: bold;
+      font-weight: bo2d;
       text-shadow: 2px 2px 4px #ccc6c6;
     }
     ul {
@@ -400,6 +420,24 @@ ul.social-icons {
   width: 100vw;
   height: calc(80vh - 70px);
   background: #f99d0d;
+  @media(min-width: 1024px) and (max-width: 1225px) {
+    height: calc(58vh - 70px);
+  }
+  @media(min-width: 768px) and (max-width: 990px) {
+    height: calc(134vh - 70px);
+  }
+  @media(min-width: 580px) and (max-width: 765px) {
+    height: calc(235vh - 70px);
+  }
+  @media(min-width: 320px) and (max-width: 568px) {
+    height: calc(366vh - 70px);
+  }
+  @media(min-width: 375px) and (max-width: 667px) {
+    height: calc(312vh - 70px);
+  }
+  @media(min-width: 414px) and (max-width: 736px) {
+    height: calc(283vh - 70px);
+  }
   .cirbox1 {
     position: absolute;
     width: 40%;
@@ -412,10 +450,16 @@ ul.social-icons {
     @media(min-width: 320px) and (max-width: 746px) {
       clip-path: circle(65% at 0 0);
     }
+    @media(min-width: 1024px) and (max-width: 1225px) {
+      clip-path: circle(68% at 0 0);
+    }
+    @media(min-width: 768px) and (max-width: 1022px) {
+      clip-path: circle(72% at 0 0);
+    }
   }
   .cirbox2 {
     position: absolute;
-    width: 68%;
+    width: 75%;
     height: calc(80vh - 70px);
     background: #eee;
     opacity: 0.7;
@@ -425,9 +469,25 @@ ul.social-icons {
     @media(min-width: 320px) and (max-width: 746px) {
       clip-path: circle(74% at 0 0);
     }
+    @media(min-width: 1024px) and (max-width: 1226px) {
+      height: calc(58vh - 70px);
+      clip-path: circle(98% at 0 0);
+    }
+    @media(min-width: 992px) and (max-width: 1022px) {
+      width: 68%;
+      height: calc(95vh);
+      clip-path: circle(88% at 0 0);
+    }
+    @media(min-width: 768px) and (max-width: 990px) {
+      width: 80%;
+      clip-path: circle(88% at 0 0);
+    }
+    @media(min-width: 414px) and (max-width: 736px) {
+      width: 78%;
+    }
   }
   .container-fluid {
-    @media(min-width: 1024px) {
+    @media(min-width: 1226px) {
       padding-top: 160px;
     }
   }
@@ -453,12 +513,32 @@ ul.social-icons {
   #container {
     position: relative;
     height: 350px;
+    @media(min-width: 1024px) and (max-width: 1225px) {
+      height: 460px;
+    }
     .cptitle {
-      top: 140px;
+      top: 54px;
       position: relative;
       padding-left: 20px;
       font-size: 16px;
-      color: #f9d30d;
+      color: #000;
+      width: 205px;
+      left: 30px;
+      @media(min-width: 1024px) and (max-width: 1225px) {
+        top: 95px;
+      }
+      @media(min-width: 992px) and (max-width: 1022px) {
+        top: 313px;
+      }
+      @media(min-width: 768px) and (max-width: 990px) {
+        top: 288px;
+      }
+      @media(min-width: 580px) and (max-width: 765px) {
+        top: 110px;
+      }
+      @media(min-width: 320px) and (max-width: 568px) {
+        top: 180px;
+      }
     }
   }
   .circle { 
@@ -475,8 +555,11 @@ ul.social-icons {
     &.cirpos1 {
       z-index: 3;
       left: 25px;
-      @media(min-width: 1024px) {
+      @media(min-width: 1226px) {
         top: 15px;
+      }
+      @media(min-width: 1024px) and (max-width: 1225px) {
+        top: 230px;
       }
       .innercircle1 {
         position: absolute;
@@ -500,31 +583,56 @@ ul.social-icons {
         top: 13px;
         font-size: 16px;
         color: #b9aa5a;
+        @media(min-width: 320px) and (max-width: 568px) {
+          left: 2%;
+          top: 95px;
+        }
       } 
     }
     &.cirpos2 {
       left: 25px;
-      @media(min-width: 1024px) {
-        top: 295px;
+      width: 233px;
+      height: 233px;
+      @media(min-width: 1226px) {
+        top: 270px;
+      }
+      @media(min-width: 1024px) and (max-width: 1225px) {
+        top: 450px;
+      }
+      @media(min-width: 768px) and (max-width: 990px) {
+        top: 100px;
       }      
       div {
-        width: 300px;
-        left: 125px;
+        width: 204px;
+        left: 25px;
         position: relative;
-        top: 13px;
+        top: 80px;
         font-size: 16px;
-        color: #efff1c;
+        color: #000;
       } 
     }
     &.cirpos3 {
+      width: 245px;
+      height: 245px;
       left: 25px;
       background-image: linear-gradient(to right, transparent 50%, #ffc43c 0);
-      @media(min-width: 1024px) {
-        top: 22px;
+      @media(min-width: 1226px) {
+        top: -43px;
+      }
+      @media(min-width: 992px) and (max-width: 1022px) {
+        top: 215px;
+      }
+      @media(min-width: 768px) and (max-width: 990px) {
+        top: 190px;
+      }
+      @media(min-width: 320px) and (max-width: 765px) {
+        top: 85px;
       }
       span {
         font-size: 20px;
-        top: 10px;
+        top: 30px;
+        left: 35px;
+        color: #000;
       }
     }
     &.cirpos4 {
@@ -543,6 +651,19 @@ ul.social-icons {
           margin-left: 43px;
         }
       }
+      @media(min-width: 1024px) and (max-width: 1225px) {
+        left: 0;
+        top: 305px;
+      }
+      @media(min-width: 992px) and (max-width: 1022px) {
+        top: 66px;
+      }
+      @media(min-width: 768px) and (max-width: 990px) {
+        top: 52px;
+      }
+      @media(min-width: 320px) and (max-width: 568px) {
+        top: 77px;
+      }
       div {
         position: relative;
         width: 230px;
@@ -554,6 +675,14 @@ ul.social-icons {
           top: -30px;
           left: 18px;
         }
+        @media(min-width: 1024px) and (max-width: 1225px) {
+          top: -48px;
+          left: 0;
+        }
+        @media(min-width: 768px) and (max-width: 990px) {
+          top: -28px;
+          left: 65%;
+        }
       }
       span {
         @media(min-width: 320px) and (max-width: 530px) {
@@ -564,7 +693,7 @@ ul.social-icons {
       strong {
         color: #fff;
       }
-      @media(min-width: 1024px) {
+      @media(min-width: 1226px) {
         top: 235px;
       }
       .innercircle4 {
@@ -602,6 +731,15 @@ ul.social-icons {
       @media(min-width: 320px) and (max-width: 746px) {
         left: 20px;
       }
+      @media(min-width: 1024px) and (max-width: 1225px) {
+        top: 72px;
+      }
+      @media(min-width: 992px) and (max-width: 1022px) {
+        top: 105px;
+      }
+      @media(min-width: 768px) and (max-width: 990px) {
+        top: 170px;
+      }
       span {
         left: -77px;
         top: -75px;
@@ -623,11 +761,15 @@ ul.social-icons {
           top: -35px;
           text-align: left;
         }
+        @media(min-width: 1024px) and (max-width: 1225px) {
+          left: -180px;
+          top: -42px;
+        }
       }
       strong {
         color: #fff;
       }
-      @media(min-width: 1024px) {
+      @media(min-width: 1226px) {
         top: 55px;
       }
       .innercircle5 {
