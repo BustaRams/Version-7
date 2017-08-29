@@ -418,34 +418,38 @@ ul.social-icons {
   background-repeat: no-repeat;
   background-size:cover;
   width: 100vw;
-  height: calc(80vh - 70px);
+  height: calc(100vh - 70px);
   background: #f99d0d;
   @media(min-width: 1024px) and (max-width: 1225px) {
     height: calc(58vh - 70px);
   }
-  @media(min-width: 768px) and (max-width: 990px) {
-    height: calc(134vh - 70px);
+  @media(min-width: 768px) and (max-width: 1024px) {
+    height: calc(156vh - 70px);
   }
   @media(min-width: 580px) and (max-width: 765px) {
     height: calc(235vh - 70px);
   }
   @media(min-width: 320px) and (max-width: 568px) {
-    height: calc(366vh - 70px);
+    // height: calc(366vh - 70px);
+    height: calc(407vh - 70px);
   }
   @media(min-width: 375px) and (max-width: 667px) {
-    height: calc(312vh - 70px);
+    height: calc(346vh - 70px);
   }
   @media(min-width: 414px) and (max-width: 736px) {
     height: calc(283vh - 70px);
   }
+  @media(min-width: 412px) and (max-width: 732px) {
+    height: calc(314vh - 70px);
+  }
   .cirbox1 {
     position: absolute;
     width: 40%;
-    height: 245px;
+    height: calc(60vh - 50px);
     background: #ea9716;
     opacity: 0.5;
     -webkit-clip-path: circle(40% at 0 0);
-    clip-path: circle(40% at 0 0);
+    clip-path: circle(56% at 0 0);
     z-index: 4;
     @media(min-width: 320px) and (max-width: 746px) {
       clip-path: circle(65% at 0 0);
@@ -455,16 +459,24 @@ ul.social-icons {
     }
     @media(min-width: 768px) and (max-width: 1022px) {
       clip-path: circle(72% at 0 0);
+      height: calc(38vh - 50px);
+    }
+    @media(min-width: 360px) and (max-width: 640px) {
+      clip-path: circle(80% at 0 0);
+      height: calc(30vh - 50px);
+    }
+    @media(min-width: 320px) and (max-width: 568px) {
+      height: calc(40vh - 50px);
     }
   }
   .cirbox2 {
     position: absolute;
     width: 75%;
-    height: calc(80vh - 70px);
+    height: calc(100vh - 70px);
     background: #eee;
     opacity: 0.7;
     -webkit-clip-path: circle(100% at 0 0);
-    clip-path: circle(100% at 0 0);
+    clip-path: circle(95% at 0 0);
     z-index: 2;
     @media(min-width: 320px) and (max-width: 746px) {
       clip-path: circle(74% at 0 0);
@@ -473,6 +485,10 @@ ul.social-icons {
       height: calc(58vh - 70px);
       clip-path: circle(98% at 0 0);
     }
+    @media(min-width: 375px) and (max-width: 667px) {
+      height: calc(65vh - 70px);
+      clip-path: circle(86% at 0 0);
+    }
     @media(min-width: 992px) and (max-width: 1022px) {
       width: 68%;
       height: calc(95vh);
@@ -480,10 +496,18 @@ ul.social-icons {
     }
     @media(min-width: 768px) and (max-width: 990px) {
       width: 80%;
-      clip-path: circle(88% at 0 0);
+      clip-path: circle(84% at 0 0);
+      height: calc(70vh - 70px);
     }
     @media(min-width: 414px) and (max-width: 736px) {
       width: 78%;
+    }
+    @media(min-width: 360px) and (max-width: 640px) {
+      clip-path: circle(84% at 0 0);
+      height: calc(55vh - 70px);
+    }
+    @media(min-width: 320px) and (max-width: 568px) {
+      height: calc(68vh - 70px);
     }
   }
   .container-fluid {
@@ -539,18 +563,19 @@ ul.social-icons {
       @media(min-width: 320px) and (max-width: 568px) {
         top: 180px;
       }
+      @media(min-width: 360px) and (max-width: 640px) {
+        top: 132px;
+      }
     }
   }
   .circle { 
     border-radius: 50%;
     position: absolute;
     background: #fff;
-    width: 103px; 
-    height: 103px;
+    width: 233px; 
+    height: 233px;
     @media(max-width: 746px) {
       top: 15px;
-      width: 86px; 
-      height: 86px;
     }
     &.cirpos1 {
       z-index: 3;
@@ -560,39 +585,26 @@ ul.social-icons {
       }
       @media(min-width: 1024px) and (max-width: 1225px) {
         top: 230px;
-      }
-      .innercircle1 {
-        position: absolute;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background: #f99d0d;
-        top: 26%;
-        left: 26%;
-        @media(min-width: 320px) and (max-width: 746px){
-          left: 28%;
-          top: 28%;
-          width: 40px;
-          height: 40px;
-        }    
-      }      
+      }   
       div {
-        width: 300px;
-        left: 125px;
+        width: 192px;
+        left: 29px;
         position: relative;
-        top: 13px;
+        top: 45px;
         font-size: 16px;
         color: #b9aa5a;
         @media(min-width: 320px) and (max-width: 568px) {
-          left: 2%;
-          top: 95px;
+          left: 10%;
+          top: 50px;
+        }
+        @media(min-width: 360px) and (max-width: 640px) {
+          left: 10%;
+          top: 53px;
         }
       } 
     }
     &.cirpos2 {
       left: 25px;
-      width: 233px;
-      height: 233px;
       @media(min-width: 1226px) {
         top: 270px;
       }
@@ -628,6 +640,9 @@ ul.social-icons {
       @media(min-width: 320px) and (max-width: 765px) {
         top: 85px;
       }
+      @media(min-width: 360px) and (max-width: 640px) {
+        top: 33px;
+      }
       span {
         font-size: 20px;
         top: 30px;
@@ -641,14 +656,21 @@ ul.social-icons {
       &:before {
         content: '';
         display: block;
-        margin-left: 51px;
-        height: 100%;
+        margin-left: 112px;
+        height: 97%;
         border-radius: 0 100% 100% 0 / 50%;
         background: #ffc43c;
         transform-origin: left;
         transform: rotate(.27turn);
         @media(min-width: 320px) and (max-width: 746px) {
           margin-left: 43px;
+        }
+        @media(min-width: 360px) and (max-width: 640px) {
+          margin-left: 113px;
+          height: 97%;
+        }
+        @media(min-width: 320px) and (max-width: 568px) {
+          margin-left: 112px;
         }
       }
       @media(min-width: 1024px) and (max-width: 1225px) {
@@ -662,15 +684,15 @@ ul.social-icons {
         top: 52px;
       }
       @media(min-width: 320px) and (max-width: 568px) {
-        top: 77px;
+        top: 150px;
       }
       div {
         position: relative;
         width: 230px;
-        left: 195%;
+        left: 108%;
         color: #f9d30d;
         font-size: 16px;
-        top: -140px;
+        top: -180px;
         @media(min-width: 320px) and (max-width: 530px) {
           top: -30px;
           left: 18px;
@@ -679,36 +701,47 @@ ul.social-icons {
           top: -48px;
           left: 0;
         }
-        @media(min-width: 768px) and (max-width: 990px) {
+        @media(min-width: 768px) and (max-width: 1024px) {
           top: -28px;
-          left: 65%;
+          left: 28%;
         }
       }
       span {
-        @media(min-width: 320px) and (max-width: 530px) {
-          top: -70px;
+        @media(min-width: 320px) and (max-width: 568px) {
+          top: -132px;
+          left: 36%;
         }
-        top: -83px;
+        @media(min-width: 360px) and (max-width: 640px) {
+          top: -130px;
+          left: 33%;
+        }
+        top: -130px;
       }
       strong {
         color: #fff;
       }
       @media(min-width: 1226px) {
-        top: 235px;
+        top: 322px;
       }
       .innercircle4 {
         position: absolute;
-        width: 50px;
-        height: 50px;
+        width: 118px;
+        height: 118px;
         border-radius: 50%;
         background: #f99d0d; 
-        left: 27px;
-        top: 27px;
+        left: 57px;
+        top: 61px;
         @media(min-width: 320px) and (max-width: 746px){
           left: 24px;
           top: 25px;
-          width: 40px;
-          height: 40px;
+        }
+        @media(min-width: 320px) and (max-width: 568px){
+          left: 58px;
+          top: 58px;
+        }
+        @media(min-width: 360px) and (max-width: 640px){
+          left: 56px;
+          top: 60px;
         }       
       }
     }
@@ -718,14 +751,20 @@ ul.social-icons {
       &:before {
         content: '';
         display: block;
-        margin-left: 51px;
-        height: 100%;
+        margin-left: 112px;
+        height: 99%;
         border-radius: 0 100% 100% 0 / 50%;
         background: #ffc43c;
         transform-origin: left;
         transform: rotate(.1turn);
         @media(min-width: 320px) and (max-width: 746px) {
           margin-left: 42px;
+        }
+        @media(min-width: 360px) and (max-width: 640px) {
+          margin-left: 111px;
+        }
+        @media(min-width: 320px) and (max-width: 568px) {
+          margin-left: 112px;
         }
       }
       @media(min-width: 320px) and (max-width: 746px) {
@@ -740,19 +779,33 @@ ul.social-icons {
       @media(min-width: 768px) and (max-width: 990px) {
         top: 170px;
       }
+      @media(min-width: 360px) and (max-width: 640px) {
+        top: 155px;
+      }
+      @media(min-width: 320px) and (max-width: 568px) {
+        top: 227px;
+      }
       span {
-        left: -77px;
-        top: -75px;
+        left: 80px;
+        top: -140px;
         @media(min-width: 320px) and (max-width: 746px) {
           top: -72px;
           left: 100px;
         }
+        @media(min-width: 320px) and (max-width: 568px) {
+          top: -135px;
+          left: 83px;
+        }
+        @media(min-width: 360px) and (max-width: 640px) {
+          top: -140px;
+          left: 83px;
+        }
       }
       div {
         position: relative;
-        left: -335px;
+        left: -265px;
         text-align: right;
-        top: -130px;
+        top: -190px;
         width: 244px;
         color: #f9d30d;
         font-size: 16px;
@@ -774,23 +827,29 @@ ul.social-icons {
       }
       .innercircle5 {
         position: absolute;
-        width: 50px;
-        height: 50px;
+        width: 118px;
+        height: 118px;
         border-radius: 50%;
         background: #f99d0d;
-        top: 27px;
-        left: 27px;
+        top: 58px;
+        left: 58px;
         @media(min-width: 320px) and (max-width: 746px){
           left: 24px;
           top: 25px;
-          width: 40px;
-          height: 40px;
-        }             
+        }
+        @media(min-width: 360px) and (max-width: 640px){
+          left: 58px;
+          top: 58px;
+        }  
+        @media(min-width: 320px) and (max-width: 568px){
+          left: 58px;
+          top: 58px;
+        }           
       }
     }
   } 
   span {
-    left: 117px; 
+    left: 85px; 
     top: 25px; 
     position: relative;
     font-size: 35px;
@@ -800,5 +859,8 @@ ul.social-icons {
       left: 96px;
       top: 33px;
     }
+  }
+  .container {
+    margin-top: 230px;
   }
 }
